@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer app mini-variant class="gradient-bg" dark :permanent="true">
+  <v-navigation-drawer app mini-variant color="primary" dark :permanent="true">
     <v-list-item class="px-2">
       <v-list-item-content>
         <v-list-item-title class="text-h5">
@@ -43,12 +43,3 @@ const items = [
   ["contact_support", "About", "/about"],
 ];
 </script>
-
-<style>
-.gradient-bg {
-  background: -moz-linear-gradient(45deg, rgba(46, 49, 146, 1), rgba(155, 5, 5, 1) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(46, 49, 146, 1), rgba(155, 5, 5, 1) 100%);
-  background: linear-gradient(45deg, rgba(18, 18, 18, 1), rgba(155, 5, 5, 1) 100%);
-  /*margin-bottom: -100px !important;*/
-}
-</style>

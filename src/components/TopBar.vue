@@ -1,12 +1,12 @@
 <template>
-  <v-app-bar app color="primary" dark>
+  <v-app-bar app color="primary" light>
     <v-toolbar-title class="text-uppercase white--text">
-      <span class="font-weight-light">FDM</span>
+      <span class="font-weight-dark">FDM</span>
       <strong>Monster</strong>
     </v-toolbar-title>
 
     <v-spacer v-if="isDemoMode" />
-    <h2 v-if="isDemoMode" class="text-uppercase text--white">DEMO MODE</h2>
+    <h2 v-if="isDemoMode" class="text-uppercase white--text">DEMO MODE</h2>
     <v-spacer></v-spacer>
 
     <PrintJobsMenu />
@@ -23,7 +23,7 @@
       transition="slide-y-transition"
     >
       <template v-slot:activator="{ on, attrs }">
-        <v-btn class="ml-2" color="secondary" dark nuxt v-bind="attrs" v-on="on">
+        <v-btn class="ml-2" color="secondary" light nuxt v-bind="attrs" v-on="on">
           <v-icon class="mr-2">person</v-icon>
           {{ username }}
         </v-btn>
@@ -41,9 +41,9 @@
       </v-list>
     </v-menu>
 
-    <span v-if="isDevEnv && expiry" class="ml-2"> AuthExp {{ expiry }} </span>
+    <span v-if="isDevEnv && expiry" class="ml-2 white--text"> AuthExp {{ expiry }} </span>
 
-    <span v-if="isDevEnv" class="ml-2">
+    <span v-if="isDevEnv" class="ml-2 white--text">
       <small>
         S{{ socketState.setup ? 1 : 0 }} C{{ socketState.connected ? 1 : 0 }}
         {{ socketState.id }}

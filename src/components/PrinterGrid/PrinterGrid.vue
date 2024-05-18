@@ -67,12 +67,6 @@
         </v-row>
       </v-col>
     </v-row>
-    <img
-      alt="FDM Monster Background"
-      class="grid-bg-img align-content-center"
-      src="/img/logo.svg"
-      style="opacity: 0.08; pointer-events: none"
-    />
   </div>
 </template>
 

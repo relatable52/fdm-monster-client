@@ -17,9 +17,8 @@
             width="150"
           ></v-img>
 
-          <v-toolbar-title class="text-uppercase red--text">
-            <strong>FDM&nbsp;</strong>
-            <strong>Monster</strong>
+          <v-toolbar-title class="text-uppercase blue--text">
+            <strong>IMS LAB</strong>
           </v-toolbar-title>
 
           <v-toolbar-title class="mt-lg-6 mt-sm-5"> Login to your account</v-toolbar-title>

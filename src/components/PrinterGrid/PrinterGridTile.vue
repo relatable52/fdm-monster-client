@@ -14,7 +14,7 @@
           !gridStore.gridEditMode || !printer ? printerStateColor : 'rgba(1,1,1,0)',
       }"
       class="tile fill-height"
-      outlined
+      plain
       tile
       @click="selectOrUnplacePrinter()"
     >
@@ -282,7 +282,7 @@ export default defineComponent({
       if (!states) {
         return defaultColor;
       }
-      return states.rgb || defaultColor;
+      return states.rgb;
     });
 
     const currentJob = computed(() => {

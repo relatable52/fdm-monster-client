@@ -19,7 +19,7 @@
         style="max-width: 800px; border-top: 1px solid grey; border-bottom: 1px solid grey"
       >
         <v-list-item-content
-          :class="isCurrentAccount(user) ? 'pl-6 grey darken-3' : 'pl-6 grey darken-4'"
+          :class="isCurrentAccount(user) ? 'pl-6 grey lighten-2' : 'pl-6 grey lighten-1'"
         >
           <v-list-item-title>
             User '{{ user.username }}'
@@ -28,7 +28,7 @@
             </strong>
           </v-list-item-title>
           <v-list-item-subtitle></v-list-item-subtitle>
-          <span class="grey--text darken-4">
+          <span class="grey--text lighten-1">
             <ul>
               <li>
                 <span v-if="user.isVerified" class="success--text">Account verified</span>
@@ -56,7 +56,7 @@
         <v-list-item-action>
           <v-btn
             :disabled="isCurrentAccount(user) || user.isRootUser"
-            :color="user.isVerified ? 'error darken-4' : 'success'"
+            :color="user.isVerified ? 'error lighten-1' : 'success'"
             @click="verifyUser(user, !user.isVerified)"
           >
             <v-icon class="mr-2">shield</v-icon>
@@ -64,7 +64,7 @@
             <span v-if="user.isVerified">Unverify account</span>
           </v-btn>
           <v-btn
-            :color="user.isRootUser ? 'error darken-4' : 'success'"
+            :color="user.isRootUser ? 'error lighten-1' : 'success'"
             :disabled="isCurrentAccount(user) || !profile?.isRootUser"
             class="mt-2"
             @click="setRootUser(user, !user.isRootUser)"
@@ -76,7 +76,7 @@
           <v-btn
             :disabled="isCurrentAccount(user) || user.isRootUser"
             class="mt-2"
-            color="error darken-2"
+            color="error lighten-3"
             @click="deleteUser(user)"
           >
             <v-icon class="mr-2">delete</v-icon>

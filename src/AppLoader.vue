@@ -1,7 +1,7 @@
 <template>
   <span>
     <v-overlay v-model="overlay" opacity="0.98" style="z-index: 7">
-      <GridLoader v-if="loading" :size="20" class="ma-auto" color="#a70015" />
+      <GridLoader v-if="loading" :size="20" class="ma-auto" color="#ccccee" />
       <br />
 
       <div v-if="errorCaught" style="margin: 50px">

@@ -22,7 +22,7 @@
       Please reload here if you want updated results:
       <v-btn color="primary" x-small @click="loadCompletions()">Reload</v-btn>
     </v-alert>
-    <v-simple-table dark>
+    <v-simple-table light>
       <template v-slot:default>
         <thead>
           <tr>

@@ -70,6 +70,5 @@ onMounted(() => {
 <style>
 html {
   overflow-y: auto;
-  background-color: #121212;
 }
 </style>

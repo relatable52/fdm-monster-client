@@ -10,12 +10,12 @@ const COLOR = {
 } as const;
 
 const RGB = {
-  DarkBlue: "#050c2e",
-  Black: "#000000",
-  DarkGray: "#262626",
-  LightBrown: "#583c0e",
-  Brown: "#580e47",
-  Red: "#2e0905",
+  DarkBlue: "#151c5e",
+  Black: "#888888",
+  DarkGray: "#bbbbbb",
+  LightBrown: "#ffea00",
+  Brown: "#bd7706",
+  Red: "#cc2222",
 } as const;
 
 const LABEL = {

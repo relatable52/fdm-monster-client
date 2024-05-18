@@ -6,7 +6,7 @@
       src="/img/logo.svg"
       style="opacity: 0.08"
     />
-    <v-stepper v-model="stepper" class="grey darken-4">
+    <v-stepper v-model="stepper" class="grey lighten-3">
       <v-stepper-header>
         <v-stepper-step :complete="stepper > 1" step="1"> Introduction</v-stepper-step>
 
@@ -23,7 +23,7 @@
         <v-stepper-content class="align-content-center align-center text-center" step="1">
           <div class="align-content-center align-center text-center">
             <img class="rounded-pill ma-4" src="/img/OIG.jpg" style="opacity: 0.7" width="400" />
-            <h1>FDM Monster</h1>
+            <h1>IMS LAB</h1>
             <small>This server is still unconfigured.</small>
           </div>
           <v-btn class="mt-14 mb-14" color="primary" @click="stepper = 2">Start Setup</v-btn>
