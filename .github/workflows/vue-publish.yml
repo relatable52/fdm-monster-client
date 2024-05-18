@@ -18,7 +18,7 @@ jobs:
       - run: yarn run build
       - run: yarn run test:unit
       - uses: JS-DevTools/npm-publish@v3
-        if: ${{ github.repository.name == 'fdm-monster-client' }}
+        if: ${{ github.repository.name == 'imslab_client' }}
         with:
           dry-run: true
           token: ${{ secrets.NPM_TOKEN }}
